@@ -10,25 +10,19 @@ import matplotlib.pyplot as plt
 
 df=pd.read_csv("C:\Projetos\Heart_attack_risck_predicition\myenv\Dataset\heart-attack-risk-prediction-dataset.csv")
 
-df['teste']=df['Age']*5
+print('Dataset loaded.')
+print('Shape:', df.shape)
+print('Columns:', df.columns.tolist())
 
-x=df['Age']
-y= df['Heart rate']
+# # Criando o gráfico
+# plt.plot(x, y, color='red')
 
+# # Adicionando rótulos
+# plt.xlabel('Eixo X')
+# plt.ylabel('Eixo Y')
+# plt.title('Gráfico Simples')
 
+# # Exibir o gráfico
+# plt.show()
 
-import matplotlib.pyplot as plt
-
-
-# Criando o gráfico
-plt.bar(x, y, color='ciano')
-
-# Adicionando rótulos
-plt.xlabel('Eixo X')
-plt.ylabel('Eixo Y')
-plt.title('Gráfico Simples')
-
-# Exibir o gráfico
-plt.show()
-
-#test
+#testssss
